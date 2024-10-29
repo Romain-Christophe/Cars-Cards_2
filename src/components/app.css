@@ -52,15 +52,16 @@ main {
   height: 100vh;
   background-color: #f0f0f0;
   margin: 0;
+  
 }
 
 .card-container {
   perspective: 1000px; /* Crée un effet de perspective */
-}
+  
 
 .card {
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   position: relative;
   transform-style: preserve-3d; /* Préserve l'effet 3D */
   transition: transform 0.6s; /* Durée de la transition */
@@ -86,11 +87,54 @@ main {
 
 .card-front {
   background-color: #4caf50; /* Couleur du recto */
+  display: flex;
+  flex-direction: column;
+}
 }
 
 .card-back {
-  background-color: #f44336; /* Couleur du verso */
+  background-color: black; /* Couleur du verso */
   transform: rotateY(180deg); /* Retourne le verso */
+  display: flex;
+  flex-direction: column;
 }
 
 
+.card-section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  height: 100vh;
+  margin-left: 120px;
+  margin-top: 20px;
+  background-color: #e6e7e9;
+  
+}
+
+
+#car-pic{
+width: 300px;
+height: 200px;
+border-radius: 12px;
+object-fit: cover;
+
+}
+
+#car-model{
+font-size: 20px;
+text-align: center;
+padding: 5px;
+}
+#car-brand{
+  font-size: 20px;
+text-align: center;
+padding: 5px;
+}
+#car-year{
+
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+}

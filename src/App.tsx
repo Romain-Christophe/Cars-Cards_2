@@ -8,6 +8,7 @@ function App() {
   return (
     <>
     <Header/>
+
     <section className="card-section">
         {data.map((car) => (
           <Card
