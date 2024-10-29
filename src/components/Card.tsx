@@ -1,15 +1,24 @@
 import  { useState } from 'react'; 
-import '../App.css';
+import './Data';
 
-const Card = () => {
+interface CardI{
+    model: string;
+    brand: string;
+    year: number;
+    imgSrc: string;
+}
+
+const Card = ({model,brand,year,imgSrc}:CardI ) => {
     const [flipped, setFlipped] = useState(false);
 
     return (
         <div className="card-container">
             <div className={`card ${flipped ? 'flipped' : ''}`} onClick={() => setFlipped(!flipped)}>
                 <div className="card-front">
-                    <h2>Recto</h2>
-                    <p>Cliquez ici pour retourner la carte.</p>
+                    <img src={imgSrc} alt={model}/>
+                    <h2>{model}</h2>
+                    <h3>{brand}</h3>
+                    <p>Year: {year}</p>
                 </div>
                 <div className="card-back">
                     <h2>Verso</h2>
