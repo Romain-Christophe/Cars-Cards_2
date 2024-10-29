@@ -15,14 +15,13 @@ const Card = ({model,brand,year,imgSrc}:CardI ) => {
         <div className="card-container">
             <div className={`card ${flipped ? 'flipped' : ''}`} onClick={() => setFlipped(!flipped)}>
                 <div className="card-front">
-                    <img src={imgSrc} alt={model}/>
-                    <h2>{model}</h2>
-                    <h3>{brand}</h3>
-                    <p>Year: {year}</p>
+                   <img id='car-pic' src={imgSrc} alt={model}/>
                 </div>
                 <div className="card-back">
-                    <h2>Verso</h2>
-                    <p>Verso de la carte!</p>
+                     
+                    <h2 id='car-model'>{model}</h2>
+                    <h3 id='car-brand'>{brand}</h3>
+                    <p id='car-year'>Year: {year}</p>
                 </div>
             </div>
         </div>
