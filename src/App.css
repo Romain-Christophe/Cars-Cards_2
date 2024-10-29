@@ -1,3 +1,50 @@
+.meunpran {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  margin: 20px;
+  border-bottom: solid 3px #fe5b1c;
+  font-size: 25px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 200px;
+}
+body {
+  background-color: #e6e7e9;
+}
+
+.inputB {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.inputB input {
+  background-color: #fe5b1c;
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+.inputB button {
+  margin: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #e6e7e9;
+  outline: none;
+  border: black solid 1px;
+}
+
+
 main {
   display: flex;
   justify-content: center;
