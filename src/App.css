@@ -13,6 +13,23 @@
   margin: 0;
   padding: 0;
 }
+.footeri img {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+}
+.footeri a {
+  color: #e6e7e9;
+}
+.footeri {
+  background: #fe5b1c;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+.footeri .footer2 {
+}
 
 .logo {
   width: 200px;
@@ -43,7 +60,6 @@ body {
   outline: none;
   border: black solid 1px;
 }
-
 
 main {
   display: flex;
